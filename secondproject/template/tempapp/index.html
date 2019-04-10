@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Template Demo</title>
+    <link rel="stylesheet" href="{% static "css/mycss.css" %}"/>
+</head>
+<body>
+<h1> This is my first Template Tagging </h1>
+<img src="{% static "images/new.jpg" %}" alt="">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/125px-Flag_of_India.svg.png" alt=" Indian Flag">
+{{random_var}}
+</body>
+</html>
