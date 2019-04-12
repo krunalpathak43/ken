@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+    <title>Django Practice Template</title>
+</head>
+<body>
+<header>
+    <h1>Title of my page</h1>
+</header>
+<h1> Hello we are in index1!</h1>
+<img src="{% static "images/car.jpg" %}" alt="car image">
+<p>{{random_var}}</p>
+<div id ="hello">
+    Main body
+    <ol><li>Cars</li><ul><li>Honda</li><li>Toyota</li><li>BMW</li></ul><li>Animal</li><ul><li>Tiger</li><li>Lion</li><li>Deer</li></ul></ol>
+</div>
+<footer>
+    <h2>base of my page</h2>
+</footer>
+</body>
+</html>
