@@ -19,3 +19,9 @@ class Salary(models.Model):
     days=models.ForeignKey(Workhour, on_delete=models.PROTECT)
     Credited_salary=models.IntegerField()
     salary_date=models.DateField
+
+class Signup(models.Model):
+    name= models.CharField(max_length=50)
+    email=models.EmailField()
+    password=models.CharField(max_length=50)
+    ver_password=models.CharField(max_length=50)

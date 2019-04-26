@@ -1,0 +1,31 @@
+<DOCTYPE html>
+{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+      <h1>
+          <body style="text-align:center;"></body>
+<button><a href="/">Home</a></button>
+<button><a href="/about">About</a></button>
+<button><a href="/gallery">Gallery</a></button>
+<button><a href="/login">Login</a></button>
+          <button><a href="/signup">Signup</a></button></h1><br>
+
+        <h2> LOGIN</h2>
+
+<form method="post" action="{% url 'mainapp:user_login' %}">
+          {% csrf_token %}
+          {# A more "HTML" way of creating the login form#}
+    <p>
+          <label for="username">Username:</label>
+          <input type="text" name="username" placeholder="Username">
+    </p>
+    <p>
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password">
+    </p>
+<input type="submit" name="" value="Submit">
+</form>
+</div>
+  </div>
+</DOCTYPE>
+{% endblock %}

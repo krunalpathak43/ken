@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+      <style>
+
+        footer {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: #FFFFFF;
+
+    }
+
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #f0f;
+        line-height: 0.2px;
+        font-size: 1.2em;
+        text-align: right;
+        bottom:-400px;
+    }
+</style>
+
+</head>
+<body style="text-align:center;">
+<h1>
+<button><a href="/">Home</a></button>
+<button><a href="/about">About</a></button>
+<button><a href="/gallery">Gallery</a></button>
+<button><a href="/login">Login</a></button>
+<button><a href="/signup">Signup</a></button>
+</h1>
+<h1> Signup: </h1>
+<form method="post">
+    {%  csrf_token  %}
+{{ any_form_key.as_p }}
+    <input type="submit" value="submit">
+</form>
+
+<div>
+<footer>
+    <p class="copyright">© Krunal Pathak</p>
+</footer>
+</div>
+
+</body>
+</html>

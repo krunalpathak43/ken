@@ -11,6 +11,18 @@
     <h1>Title of my page</h1>
 </header>
 <h1> Hello we are in index1!</h1>
+<a href="/form">Access form from here</a>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form1}}
+   <!-- <input name="name" type="text" label="Enter Your Name"<br>  -->
+</form>
+
+
+
+
+
 <img src="{% static "images/car.jpg" %}" alt="car image">
 <p>{{random_var}}</p>
 <div id ="hello">
